@@ -15,7 +15,7 @@ const Home = () => {
 
     try {
       let response = await axios.get(
-        `https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&appid=807d5dab8136a4a392486f49b79c4981&units=metric`
+        `https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&appid= //put your forecast key here// &units=metric`
       );
       console.log("response:", response);
       setData(response.data.list);
